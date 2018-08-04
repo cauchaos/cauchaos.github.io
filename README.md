@@ -1,3 +1,3 @@
 # cauchaos.github.io
 
-this is homepage of ChAOS, Algorithm Club in Chung-Ang University.
+This is homepage of ChAOS, Chung-ang university Algorithm Organization and Society.
