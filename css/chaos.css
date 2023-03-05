@@ -1,0 +1,23 @@
+.popup-gallery > .col-md-6 {
+    height: 360px;
+}
+.portfolio-box {
+    max-width: initial;
+    height: 100%;
+}
+.portfolio-box-container.first {
+    background-image: url('../img/portfolio/1.jpg');
+    background-position-y: 60%;
+    background-size: cover;
+}.portfolio-box-container.second {
+    background-image: url('../img/portfolio/2.png');
+    background-position-y: 10%;
+    background-size: cover;
+}.portfolio-box-container.third {
+    background-image: url('../img/portfolio/3.jpg');
+    background-size: cover;
+}.portfolio-box-container.fourth {
+    background-image: url('../img/portfolio/4.jpg');
+    background-size: cover;
+    background-position: 60%;
+}
