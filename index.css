@@ -6,7 +6,7 @@ html, body {
 }
 
 .introduction {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url("img/2022_icpc.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url("img/2022_icpc.webp");
   background-size: cover;
   background-position: 20% 50%;
   width: 100%;
@@ -101,17 +101,17 @@ header .icon {
   background-size: cover;
 }
 .activities .activity-row .activity .image#first-image {
-  background-image: url("img/2022_cosmos_camp.jpg");
+  background-image: url("img/2022_cosmos_camp.webp");
 }
 .activities .activity-row .activity .image#second-image {
-  background-image: url("img/2022_icpc_2.png");
+  background-image: url("img/2022_icpc_2.webp");
   background-position-y: top;
 }
 .activities .activity-row .activity .image#third-image {
-  background-image: url("img/2022_cpc.png");
+  background-image: url("img/2022_cpc.webp");
 }
 .activities .activity-row .activity .image#fourth-image {
-  background-image: url("img/baekjon_scoreboard.jpg");
+  background-image: url("img/baekjon_scoreboard.webp");
 }
 
 .join-us {
