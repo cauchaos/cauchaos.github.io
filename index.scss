@@ -1,0 +1,170 @@
+html, body {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    font-size: 20px;
+}
+
+.introduction {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('img/2022_icpc.png');
+    background-size: cover;
+    background-position: 20% 50%;
+    width: 100%;
+    min-height: 100vh;
+    min-height: 100dvh;
+
+    .content {
+        padding: 5rem 3rem 2.5rem 5rem;
+        max-width: 75%;
+        color: rgb(146, 146, 146);
+
+        h1 {
+            border-left: 0.25em white solid;
+            padding: 0px 0px 0px 1.15em;
+            margin: 0px 0px 1em 0px;
+            font-size: 1.8rem;
+
+            .head-letter {
+                color: white;
+            }
+        }
+
+        p {
+            color: white;
+        }
+
+        p.links {
+            margin-top: 1.5em;
+            font-size: 1.15em;
+            a {
+                color: white;
+                display: inline-block;
+                margin-right: 0.75em;
+            }
+        }
+    }
+}
+
+header {
+    background:rgb(85, 85, 85);
+    color: white;
+    padding: 3em 0.7em;
+
+    h2 {
+        padding: 0px;
+        margin: 0px;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .icon {
+        font-size: 1.2em;
+    }
+}
+
+.activities {
+    display: flex;
+    flex-direction: column;
+    .activity-row {
+        display: flex;
+        flex-direction: row;
+        
+        @media (min-width: 1025px) {
+            &:nth-child(even) > .activity {
+                flex-direction: row-reverse;
+            }
+        }
+
+        @media (max-width: 1024px) {
+            flex-direction: column;
+        }
+
+        .activity {
+            flex: 1;
+            display: flex;
+            flex-direction: row;
+            
+            @media (max-width: 640px) {
+                flex-direction: column;
+                .image {
+                    flex: initial !important;
+                    height: min(15rem, 50vh);
+                }
+            }
+
+            .description {
+                flex: 1 1 0;
+                padding: 2.5rem;
+
+                h3  {
+                    font-size: 1.5rem;
+                    padding-left: 1rem;
+                    border-left: 5px solid black;
+                }
+            }
+
+            .image {
+                flex: 2 1 0;
+                background-size: cover;
+
+                &#first-image {
+                    background-image: url('img/2022_cosmos_camp.jpg');
+                }
+                &#second-image {
+                    background-image: url('img/2022_icpc_2.png');
+                    background-position-y: top;
+                }
+                &#third-image {
+                    background-image: url('img/2022_cpc.png');
+                }
+                &#fourth-image {
+                    background-image: url('img/baekjon_scoreboard.jpg');
+                }
+            }
+        }
+    }
+}
+
+.join-us {
+    text-align: center;
+    padding: 3em 1em;
+    width: 100%;
+    box-sizing: border-box;
+    .contacts {
+        margin-top: 1.5em;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 2em;
+        .contact {
+            .icon {
+                font-size: 2.5em;
+            }
+            width: max-content;
+        }
+    }
+}
+
+footer {
+    background-color: rgb(196, 196, 196);
+    padding: 3rem 6rem;
+    color:rgb(56, 56, 56);
+
+    a {
+        color: rgb(61, 134, 245);
+        text-decoration: none;
+
+        &:hover, &:focus {
+            color: rgb(15, 94, 212);
+
+        }
+        &:active {
+            color: rgb(15, 74, 163);
+
+        }
+        &:visited {
+            color: rgb(163, 82, 15);
+        }
+    }
+}
