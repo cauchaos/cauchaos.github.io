@@ -5,6 +5,21 @@ html, body {
   font-size: 20px;
 }
 
+a {
+  color: rgb(61, 134, 245);
+  text-decoration: none;
+}
+a:hover, a:focus {
+  color: rgb(15, 94, 212);
+  text-decoration: underline;
+}
+a:active {
+  color: rgb(15, 74, 163);
+}
+a:visited {
+  color: rgb(163, 82, 15);
+}
+
 .introduction {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url("img/2022_icpc.webp");
   background-size: cover;
@@ -139,19 +154,6 @@ footer {
   background-color: rgb(196, 196, 196);
   padding: 3rem 6rem;
   color: rgb(56, 56, 56);
-}
-footer a {
-  color: rgb(61, 134, 245);
-  text-decoration: none;
-}
-footer a:hover, footer a:focus {
-  color: rgb(15, 94, 212);
-}
-footer a:active {
-  color: rgb(15, 74, 163);
-}
-footer a:visited {
-  color: rgb(163, 82, 15);
 }
 
 /*# sourceMappingURL=index.css.map */
