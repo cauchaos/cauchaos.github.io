@@ -5,6 +5,24 @@ html, body {
     font-size: 20px;
 }
 
+a {
+    color: rgb(61, 134, 245);
+    text-decoration: none;
+
+    &:hover, &:focus {
+        color: rgb(15, 94, 212);
+        text-decoration: underline;
+
+    }
+    &:active {
+        color: rgb(15, 74, 163);
+
+    }
+    &:visited {
+        color: rgb(163, 82, 15);
+    }
+}
+
 .introduction {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('img/2022_icpc.webp');
     background-size: cover;
@@ -15,6 +33,12 @@ html, body {
 
     .content {
         padding: 5rem 3rem 2.5rem 5rem;
+        @media (max-width: 1024px) {
+            padding: 4rem 2rem 2rem 3rem
+        }
+        @media (max-width: 640px) {
+            padding: 3rem 1.5rem 15rem 2rem;
+        }
         max-width: 75%;
         color: rgb(146, 146, 146);
 
@@ -140,6 +164,7 @@ header {
         .contact {
             .icon {
                 font-size: 2.5em;
+                margin-bottom: 0.25em;
             }
             width: max-content;
         }
@@ -149,22 +174,11 @@ header {
 footer {
     background-color: rgb(196, 196, 196);
     padding: 3rem 6rem;
-    color:rgb(56, 56, 56);
-
-    a {
-        color: rgb(61, 134, 245);
-        text-decoration: none;
-
-        &:hover, &:focus {
-            color: rgb(15, 94, 212);
-
-        }
-        &:active {
-            color: rgb(15, 74, 163);
-
-        }
-        &:visited {
-            color: rgb(163, 82, 15);
-        }
+    @media (max-width: 1024px) {
+        padding: 2rem 4rem;
     }
+    @media (max-width: 640px) {
+        padding: 1rem 3rem;
+    }
+    color:rgb(56, 56, 56);
 }
