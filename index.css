@@ -33,6 +33,16 @@ a:visited {
   max-width: 75%;
   color: rgb(146, 146, 146);
 }
+@media (max-width: 1024px) {
+  .introduction .content {
+    padding: 4rem 2rem 2rem 3rem;
+  }
+}
+@media (max-width: 640px) {
+  .introduction .content {
+    padding: 3rem 1.5rem 15rem 2rem;
+  }
+}
 .introduction .content h1 {
   border-left: 0.25em white solid;
   padding: 0px 0px 0px 1.15em;
@@ -154,6 +164,16 @@ footer {
   background-color: rgb(196, 196, 196);
   padding: 3rem 6rem;
   color: rgb(56, 56, 56);
+}
+@media (max-width: 1024px) {
+  footer {
+    padding: 2rem 4rem;
+  }
+}
+@media (max-width: 640px) {
+  footer {
+    padding: 1rem 3rem;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

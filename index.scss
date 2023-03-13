@@ -33,6 +33,12 @@ a {
 
     .content {
         padding: 5rem 3rem 2.5rem 5rem;
+        @media (max-width: 1024px) {
+            padding: 4rem 2rem 2rem 3rem
+        }
+        @media (max-width: 640px) {
+            padding: 3rem 1.5rem 15rem 2rem;
+        }
         max-width: 75%;
         color: rgb(146, 146, 146);
 
@@ -167,5 +173,11 @@ header {
 footer {
     background-color: rgb(196, 196, 196);
     padding: 3rem 6rem;
+    @media (max-width: 1024px) {
+        padding: 2rem 4rem;
+    }
+    @media (max-width: 640px) {
+        padding: 1rem 3rem;
+    }
     color:rgb(56, 56, 56);
 }
